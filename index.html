@@ -6,27 +6,40 @@
     <title>الإجازات المرضية</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* تخصيص وضع الصورة في الجهة اليسرى مع ضبط الهوامش */
-        .header {
+        /* تخصيص الشريط العلوي */
+        .navbar {
+            background-color: #f1f1f1;
+            padding: 10px;
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
         }
 
-        .header img {
-            margin-right: 20px; /* مسافة بين الصورة والنص */
+        .navbar img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .container {
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <!-- إضافة الشعار هنا في الجهة اليسرى -->
-        <div class="header">
-            <img src="logo.png" alt="شعار الموقع" width="150" height="150">
-            <h1>الإجازات المرضية</h1>
-        </div>
+    <!-- الشريط العلوي -->
+    <div class="navbar">
+        <img src="logo.png" alt="شعار الموقع">
+        <h1>الإجازات المرضية</h1>
+    </div>
 
+    <div class="container">
         <p>خدمة الاستعلام عن الإجازات المرضية تتيح لك الاستعلام عن حالة طلبك للإجازة ويمكنك طباعتها عن طريق تطبيق صحتي.</p>
         
         <form id="sickLeaveForm">
