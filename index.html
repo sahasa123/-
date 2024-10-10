@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الإجازات المرضية</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* تخصيص وضع الصورة في الجهة اليسرى مع ضبط الهوامش */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .header img {
+            margin-right: 20px; /* مسافة بين الصورة والنص */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- إضافة الشعار هنا في الجهة اليسرى -->
+        <div class="header">
+            <img src="logo.png" alt="شعار الموقع" width="150" height="150">
+            <h1>الإجازات المرضية</h1>
+        </div>
+
+        <p>خدمة الاستعلام عن الإجازات المرضية تتيح لك الاستعلام عن حالة طلبك للإجازة ويمكنك طباعتها عن طريق تطبيق صحتي.</p>
+        
+        <form id="sickLeaveForm">
+            <input type="text" id="serviceCode" placeholder="رمز الخدمة" required><br>
+            <input type="text" id="idNumber" placeholder="رقم الهوية / الإقامة" required><br>
+            <button type="submit">استعلام</button>
+        </form>
+        
+        <button class="back-button" onclick="goBack()">رجوع للاستعلامات</button>
+
+        <div class="result" id="result" style="display: none;">
+            <!-- معلومات النتيجة هنا -->
+        </div>
+
+        <footer>
+            <p>منصة صحة معتمدة من قبل وزارة الصحة © 2024</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
